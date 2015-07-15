@@ -8,18 +8,17 @@
 
 #import "ZJSImageBrowserViewController.h"
 #import "ZJSImageBrowserCell.h"
-#import "ZJSImageView.h"
 #import "ZJSImageBrowserTopView.h"
 #import "ZJSImagePickerBottomView.h"
 #import "ZJSImagePickerController.h"
 
-#define CELL_INDENIFIER @"ImageBrowserCell"
+
 #define kPadding 5
 
-@interface ZJSImageBrowserViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,ZJSImageViewDelegate>
+@interface ZJSImageBrowserViewController ()
 
-@property (nonatomic,strong) UICollectionView *collectionView;
-@property (nonatomic) NSUInteger currentIndex;
+
+
 
 @end
 
@@ -38,10 +37,13 @@
     rect.size.width += 2*kPadding;
     self.collectionView.frame = rect;
     [self.view addSubview:self.collectionView];
-    self.view.backgroundColor = [UIColor redColor];
-    self.collectionView.backgroundColor = [UIColor yellowColor];
-    _currentIndex = -1;
-    self.currentIndex = 0;
+    //self.view.backgroundColor = [UIColor redColor];
+    //self.collectionView.backgroundColor = [UIColor yellowColor];
+    if (self.currentIndex==0) {
+        _currentIndex = -1;
+        self.currentIndex = 0;
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -122,16 +124,13 @@
     return UIEdgeInsetsMake(0, 0, 0, 2*kPadding);
 }
 
-//-(CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
-//    return 20;
-//}
 
 -(CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section{
     return 2*kPadding;
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"didEndDisplayingCell:@%i",indexPath.row);
+    //NSLog(@"didEndDisplayingCell:@%i",indexPath.row);
     
     NSIndexPath *ip = [[self.collectionView indexPathsForVisibleItems] firstObject];
     
@@ -229,10 +228,9 @@
 -(void)setCurrentIndex:(NSUInteger)currentIndex{
 
     [super setCurrentIndex:currentIndex];
-
+    
     self.topView.selected =  [self.selectionImages containsObject:[self.images objectAtIndex:currentIndex]];
     [self setSelectCount];
-
 }
 
 #pragma mark - getter
@@ -307,10 +305,8 @@
 /*******样式二：删除*******************/
 #pragma mark - 样式二：删除
 
-@interface ZJSImageBrowserStyle2 ()<ZJSImageBrowserTopViewDelegate>
+@interface ZJSImageBrowserStyle2 ()
 
-
-@property (nonatomic,strong) ZJSImageBrowserTopView *topView;
 @property (nonatomic) BOOL isStatusBarHidden;
 
 @end
@@ -319,43 +315,36 @@
 -(void)viewDidLoad{
     [super viewDidLoad];
 
-    [self addRightItem];
+    [self addNavigationBarItems];
     //[self addTopView];
     self.isStatusBarHidden = NO;
     self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:self.currentIndex inSection:0] atScrollPosition:UICollectionViewScrollPositionLeft animated:NO];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
-//    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-//    [[UIApplication sharedApplication] setStatusBarHidden:NO];
-    
-   // [self.navigationController setNavigationBarHidden:YES];
+
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
-   // [self.navigationController setNavigationBarHidden:NO];
+  
 }
 
-#pragma mark 添加控件
--(void)addTopView{
-    [self.view addSubview:self.topView];
-    
-    NSDictionary *views = @{@"topView":self.topView};
-    NSArray *ch = [NSLayoutConstraint constraintsWithVisualFormat:@"|-0-[topView]-0-|" options:0 metrics:nil views:views];
-    NSArray *cv = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[topView(64)]" options:0 metrics:nil views:views];
-    
-    [self.view addConstraints:ch];
-    [self.view addConstraints:cv];
-}
 
--(void)addRightItem{
+
+#pragma mark -添加返回和删除按钮
+-(void)addNavigationBarItems{
     
     UIBarButtonItem *deleteItem = [[UIBarButtonItem alloc] initWithTitle:@"删除" style:UIBarButtonItemStylePlain target:self action:@selector(deleteItemTapped:)];
     self.navigationItem.rightBarButtonItem = deleteItem;
+    
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(backItemTapped:)];
+    self.navigationItem.leftBarButtonItem = backItem;
 
 }
 
-
+#pragma mark 删除
 -(void)deleteItemTapped:(UIBarButtonItem*)sender{
     
     NSIndexPath *ip = [[self.collectionView indexPathsForVisibleItems] firstObject];
@@ -372,22 +361,15 @@
         [self.collectionView reloadData];
     }
 
-//    if (self.currentIndex>=self.images.count) {
-//        self.currentIndex--;
-//    }
 
 
 }
 
-#pragma mark - ZJSImageBrowserTopViewDelegate
--(void)topViewLeftTappped:(ZJSImageBrowserTopView *)sender{
+-(void)backItemTapped:(UIBarButtonItem*)sender{
     [self.navigationController popViewControllerAnimated:YES];
 }
 
--(void)topViewRightTappped:(ZJSImageBrowserTopView *)sender{
-    [self deleteItemTapped:nil];
 
-}
 
 #pragma mark - setter
 -(void)setIsStatusBarHidden:(BOOL)isStatusBarHidden{
@@ -395,24 +377,15 @@
     [self setNeedsStatusBarAppearanceUpdate];
 }
 
-#pragma mark - getter
--(ZJSImageBrowserTopView *)topView{
-    if (!_topView) {
-        _topView = [ZJSImageBrowserTopView imageBrowserTopView];
-        _topView.translatesAutoresizingMaskIntoConstraints = NO;
-        _topView.topViewDelegate = self;
-        [_topView.rightButton setTitle:@"删除" forState:UIControlStateNormal];
-    }
-    return _topView;
-}
 
-#pragma mark imageDelegate
+
+#pragma mark - getter
+
+#pragma mark imageDelegate 点击图片
 -(void)imageViewSingleTap:(ZJSImageView *)photoView{
     
     [self.navigationController setNavigationBarHidden:!self.navigationController.navigationBarHidden animated:YES];
     self.isStatusBarHidden= self.navigationController.navigationBarHidden;
-//    self.topView.hidden = !self.topView.hidden;
-//    self.isStatusBarHidden = self.topView.hidden;
     
 }
 

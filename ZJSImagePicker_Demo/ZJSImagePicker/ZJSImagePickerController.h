@@ -19,6 +19,6 @@
 
 @property (nonatomic,weak) id<ZJSImagePickerControllerDelegate> pickerDelegate;
 
-@property (nonatomic) int maxCount;
+@property (nonatomic) NSUInteger maxCount;
 
 @end

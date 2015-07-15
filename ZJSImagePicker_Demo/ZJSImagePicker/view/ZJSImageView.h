@@ -13,12 +13,14 @@
 
 @protocol ZJSImageViewDelegate <NSObject>
 
+@optional
 - (void)imageViewSingleTap:(ZJSImageView *)photoView;
 
 @end
-;
+
 @interface ZJSImageView : UIScrollView
 
+@property (nonatomic,copy) NSString *imageUrl;
 @property (nonatomic,strong) ALAsset *asset;
 @property (nonatomic,weak) id<ZJSImageViewDelegate> imageViewDelegate;
 

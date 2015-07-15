@@ -7,6 +7,7 @@
 //
 
 #import "ZJSImageView.h"
+//#import "UIImageView+WebCache.h"
 
 @interface ZJSImageView()<UIScrollViewDelegate>
 
@@ -147,6 +148,15 @@
     self.imageView.image =  [UIImage imageWithCGImage:self.asset.defaultRepresentation.fullScreenImage];
     [self adjustFrame];
 
+}
+
+-(void)setImageUrl:(NSString *)imageUrl{
+    _imageUrl = imageUrl;
+    
+    //[self.imageView sd_setImageWithURL:[NSURL URLWithString:imageUrl]];
+#warning   修改
+    [self.imageView setImage:[UIImage imageNamed:imageUrl]];
+    [self adjustFrame];
 }
 
 #pragma mark - scrollview delegate

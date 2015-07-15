@@ -37,8 +37,6 @@
     
     self.title = @"adasdasd";
   
-    
-    [UIView transitionWithView:<#(UIView *)#> duration:<#(NSTimeInterval)#> options:<#(UIViewAnimationOptions)#> animations:<#^(void)animations#> completion:<#^(BOOL finished)completion#>];
 }
 
 -(void)imageTapped{

@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "ZJSImageView.h"
 
+#define CELL_INDENIFIER @"ImageBrowserCell"
+
 @interface ZJSImageBrowserCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet ZJSImageView *imageView;

@@ -18,10 +18,11 @@
 
 -(instancetype)init{
     ZJSImageAlbumsViewController *vc =[[ZJSImageAlbumsViewController alloc] init];
-
+    
     self = [super initWithRootViewController:vc];
     if (self) {
-            self.maxCount = 0;
+        self.maxCount = 0;
+       
     }
     
     return self;

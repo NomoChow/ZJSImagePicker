@@ -29,7 +29,7 @@
 @property (nonatomic,strong) NSMutableArray *selectionArray;
 
 @property (nonatomic,strong) ZJSImagePickerBottomView *bottomView;
-@property (nonatomic) int maxCount;
+@property (nonatomic) NSUInteger maxCount;
 
 
 @end
@@ -42,6 +42,7 @@
     
 
     self.view.backgroundColor = [UIColor whiteColor];
+    
     [self addViews];
     [self addCancelButton];
     
@@ -243,7 +244,7 @@
         return YES;
     }
     
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"无法选择，最多选择%i个",self.maxCount] delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"123", nil];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:@"无法选择，最多选择%i个",self.maxCount] delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
     [alertView show];
     
 

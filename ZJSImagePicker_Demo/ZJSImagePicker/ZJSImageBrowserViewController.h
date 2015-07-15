@@ -7,12 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZJSImageView.h"
 
 
 
-@interface ZJSImageBrowserViewController : UIViewController
+@interface ZJSImageBrowserViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,ZJSImageViewDelegate>
 
 @property (nonatomic,strong) NSMutableArray *images;
+/**当前显示的序号*/
+@property (nonatomic) NSUInteger currentIndex;
+
+@property (nonatomic,strong) UICollectionView *collectionView;
 
 @end
 

@@ -7,5 +7,5 @@
 //
 
 #import "ZJSImageAlbumsViewController.h"
-#import "ZJSImagePickerViewController.h"
-#import "ZJSImagePickerMacros.h"
+#import "ZJSImagePickerController.h"
+#import "ZJSImageBrowserViewController.h"
