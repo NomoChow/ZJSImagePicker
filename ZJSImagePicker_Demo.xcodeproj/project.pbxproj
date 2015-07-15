@@ -14,6 +14,29 @@
 		071A42E81ADFCC670044CCB0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071A42E71ADFCC670044CCB0 /* Images.xcassets */; };
 		071A42EB1ADFCC670044CCB0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071A42E91ADFCC670044CCB0 /* LaunchScreen.xib */; };
 		071A42F71ADFCC670044CCB0 /* ZJSImagePicker_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 071A42F61ADFCC670044CCB0 /* ZJSImagePicker_DemoTests.m */; };
+		071A43031ADFCF270044CCB0 /* ZJSImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 071A43021ADFCF270044CCB0 /* ZJSImagePickerViewController.m */; };
+		071A43061ADFE2220044CCB0 /* ZJSImageAlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 071A43051ADFE2220044CCB0 /* ZJSImageAlbumsViewController.m */; };
+		071A43AC1AE0DE3B0044CCB0 /* ZJSImagePickerBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 071A43AB1AE0DE3B0044CCB0 /* ZJSImagePickerBottomView.m */; };
+		071A43AE1AE0DE550044CCB0 /* ZJSImagePickerBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071A43AD1AE0DE550044CCB0 /* ZJSImagePickerBottomView.xib */; };
+		071A43B31AE0EC320044CCB0 /* ZJSImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 071A43B21AE0EC320044CCB0 /* ZJSImagePickerController.m */; };
+		071A43BB1AE0FF0F0044CCB0 /* ZJSImageAlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 071A43B61AE0FF0F0044CCB0 /* ZJSImageAlbumTableViewCell.m */; };
+		071A43BC1AE0FF0F0044CCB0 /* ZJSImageAlbumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071A43B71AE0FF0F0044CCB0 /* ZJSImageAlbumTableViewCell.xib */; };
+		071A43BD1AE0FF0F0044CCB0 /* ZJSImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 071A43B91AE0FF0F0044CCB0 /* ZJSImageCollectionViewCell.m */; };
+		071A43BE1AE0FF0F0044CCB0 /* ZJSImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071A43BA1AE0FF0F0044CCB0 /* ZJSImageCollectionViewCell.xib */; };
+		071A43C11AE100970044CCB0 /* ZJSCountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 071A43C01AE100970044CCB0 /* ZJSCountView.m */; };
+		071A43C51AE100E00044CCB0 /* ZJSCountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071A43C41AE100E00044CCB0 /* ZJSCountView.xib */; };
+		071F6E0C1AE22C9B003AB0B8 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 071F6E091AE22C9B003AB0B8 /* check.png */; };
+		071F6E0D1AE22C9B003AB0B8 /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 071F6E0A1AE22C9B003AB0B8 /* check@2x.png */; };
+		071F6E0E1AE22C9B003AB0B8 /* check@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 071F6E0B1AE22C9B003AB0B8 /* check@3x.png */; };
+		071F6E111AE22E24003AB0B8 /* ZJSImageBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 071F6E101AE22E24003AB0B8 /* ZJSImageBrowserViewController.m */; };
+		071F6E421AE2499E003AB0B8 /* ZJSAssetsLibraryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 071F6E411AE2499E003AB0B8 /* ZJSAssetsLibraryManager.m */; };
+		078FE1D01AE3DF1400BCF210 /* ZJSImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 078FE1CF1AE3DF1400BCF210 /* ZJSImageView.m */; };
+		078FE1D31AE3E4DD00BCF210 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078FE1D21AE3E4DD00BCF210 /* TestViewController.m */; };
+		078FE1D61AE3EA2800BCF210 /* Test2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078FE1D51AE3EA2800BCF210 /* Test2ViewController.m */; };
+		078FE1DA1AE4046000BCF210 /* ZJSImageBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 078FE1D81AE4046000BCF210 /* ZJSImageBrowserCell.m */; };
+		078FE1DB1AE4046000BCF210 /* ZJSImageBrowserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 078FE1D91AE4046000BCF210 /* ZJSImageBrowserCell.xib */; };
+		078FE1DE1AE4F0FE00BCF210 /* ZJSImageBrowserTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 078FE1DD1AE4F0FE00BCF210 /* ZJSImageBrowserTopView.m */; };
+		078FE1E01AE4F1BB00BCF210 /* ZJSImageBrowserTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 078FE1DF1AE4F1BB00BCF210 /* ZJSImageBrowserTopView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +63,44 @@
 		071A42F01ADFCC670044CCB0 /* ZJSImagePicker_DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJSImagePicker_DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		071A42F51ADFCC670044CCB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		071A42F61ADFCC670044CCB0 /* ZJSImagePicker_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJSImagePicker_DemoTests.m; sourceTree = "<group>"; };
+		071A43011ADFCF270044CCB0 /* ZJSImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSImagePickerViewController.h; sourceTree = "<group>"; };
+		071A43021ADFCF270044CCB0 /* ZJSImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSImagePickerViewController.m; sourceTree = "<group>"; };
+		071A43041ADFE2220044CCB0 /* ZJSImageAlbumsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSImageAlbumsViewController.h; sourceTree = "<group>"; };
+		071A43051ADFE2220044CCB0 /* ZJSImageAlbumsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSImageAlbumsViewController.m; sourceTree = "<group>"; };
+		071A43AA1AE0DE3B0044CCB0 /* ZJSImagePickerBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSImagePickerBottomView.h; sourceTree = "<group>"; };
+		071A43AB1AE0DE3B0044CCB0 /* ZJSImagePickerBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSImagePickerBottomView.m; sourceTree = "<group>"; };
+		071A43AD1AE0DE550044CCB0 /* ZJSImagePickerBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJSImagePickerBottomView.xib; sourceTree = "<group>"; };
+		071A43AF1AE0E6850044CCB0 /* ZJSImagePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJSImagePicker.h; sourceTree = "<group>"; };
+		071A43B11AE0EC320044CCB0 /* ZJSImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSImagePickerController.h; sourceTree = "<group>"; };
+		071A43B21AE0EC320044CCB0 /* ZJSImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSImagePickerController.m; sourceTree = "<group>"; };
+		071A43B51AE0FF0F0044CCB0 /* ZJSImageAlbumTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSImageAlbumTableViewCell.h; sourceTree = "<group>"; };
+		071A43B61AE0FF0F0044CCB0 /* ZJSImageAlbumTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSImageAlbumTableViewCell.m; sourceTree = "<group>"; };
+		071A43B71AE0FF0F0044CCB0 /* ZJSImageAlbumTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJSImageAlbumTableViewCell.xib; sourceTree = "<group>"; };
+		071A43B81AE0FF0F0044CCB0 /* ZJSImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSImageCollectionViewCell.h; sourceTree = "<group>"; };
+		071A43B91AE0FF0F0044CCB0 /* ZJSImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSImageCollectionViewCell.m; sourceTree = "<group>"; };
+		071A43BA1AE0FF0F0044CCB0 /* ZJSImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJSImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		071A43BF1AE100970044CCB0 /* ZJSCountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSCountView.h; sourceTree = "<group>"; };
+		071A43C01AE100970044CCB0 /* ZJSCountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSCountView.m; sourceTree = "<group>"; };
+		071A43C41AE100E00044CCB0 /* ZJSCountView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJSCountView.xib; sourceTree = "<group>"; };
+		071F6E091AE22C9B003AB0B8 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		071F6E0A1AE22C9B003AB0B8 /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check@2x.png"; sourceTree = "<group>"; };
+		071F6E0B1AE22C9B003AB0B8 /* check@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check@3x.png"; sourceTree = "<group>"; };
+		071F6E0F1AE22E24003AB0B8 /* ZJSImageBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSImageBrowserViewController.h; sourceTree = "<group>"; };
+		071F6E101AE22E24003AB0B8 /* ZJSImageBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSImageBrowserViewController.m; sourceTree = "<group>"; };
+		071F6E401AE2499E003AB0B8 /* ZJSAssetsLibraryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSAssetsLibraryManager.h; sourceTree = "<group>"; };
+		071F6E411AE2499E003AB0B8 /* ZJSAssetsLibraryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSAssetsLibraryManager.m; sourceTree = "<group>"; };
+		078FE1CE1AE3DF1400BCF210 /* ZJSImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSImageView.h; sourceTree = "<group>"; };
+		078FE1CF1AE3DF1400BCF210 /* ZJSImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSImageView.m; sourceTree = "<group>"; };
+		078FE1D11AE3E4DD00BCF210 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		078FE1D21AE3E4DD00BCF210 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		078FE1D41AE3EA2800BCF210 /* Test2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test2ViewController.h; sourceTree = "<group>"; };
+		078FE1D51AE3EA2800BCF210 /* Test2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test2ViewController.m; sourceTree = "<group>"; };
+		078FE1D71AE4046000BCF210 /* ZJSImageBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSImageBrowserCell.h; sourceTree = "<group>"; };
+		078FE1D81AE4046000BCF210 /* ZJSImageBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSImageBrowserCell.m; sourceTree = "<group>"; };
+		078FE1D91AE4046000BCF210 /* ZJSImageBrowserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJSImageBrowserCell.xib; sourceTree = "<group>"; };
+		078FE1DC1AE4F0FE00BCF210 /* ZJSImageBrowserTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSImageBrowserTopView.h; sourceTree = "<group>"; };
+		078FE1DD1AE4F0FE00BCF210 /* ZJSImageBrowserTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSImageBrowserTopView.m; sourceTree = "<group>"; };
+		078FE1DF1AE4F1BB00BCF210 /* ZJSImageBrowserTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJSImageBrowserTopView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +142,7 @@
 		071A42D91ADFCC670044CCB0 /* ZJSImagePicker_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				071A43001ADFCF090044CCB0 /* ZJSImagePicker */,
 				071A42DE1ADFCC670044CCB0 /* AppDelegate.h */,
 				071A42DF1ADFCC670044CCB0 /* AppDelegate.m */,
 				071A42E11ADFCC670044CCB0 /* ViewController.h */,
@@ -89,6 +151,10 @@
 				071A42E71ADFCC670044CCB0 /* Images.xcassets */,
 				071A42E91ADFCC670044CCB0 /* LaunchScreen.xib */,
 				071A42DA1ADFCC670044CCB0 /* Supporting Files */,
+				078FE1D11AE3E4DD00BCF210 /* TestViewController.h */,
+				078FE1D21AE3E4DD00BCF210 /* TestViewController.m */,
+				078FE1D41AE3EA2800BCF210 /* Test2ViewController.h */,
+				078FE1D51AE3EA2800BCF210 /* Test2ViewController.m */,
 			);
 			path = ZJSImagePicker_Demo;
 			sourceTree = "<group>";
@@ -117,6 +183,71 @@
 				071A42F51ADFCC670044CCB0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		071A43001ADFCF090044CCB0 /* ZJSImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				071F6E081AE22C9B003AB0B8 /* images */,
+				071A43071ADFE3220044CCB0 /* view */,
+				071A43011ADFCF270044CCB0 /* ZJSImagePickerViewController.h */,
+				071A43021ADFCF270044CCB0 /* ZJSImagePickerViewController.m */,
+				071A43041ADFE2220044CCB0 /* ZJSImageAlbumsViewController.h */,
+				071A43051ADFE2220044CCB0 /* ZJSImageAlbumsViewController.m */,
+				071A43AF1AE0E6850044CCB0 /* ZJSImagePicker.h */,
+				071A43B11AE0EC320044CCB0 /* ZJSImagePickerController.h */,
+				071A43B21AE0EC320044CCB0 /* ZJSImagePickerController.m */,
+				071F6E0F1AE22E24003AB0B8 /* ZJSImageBrowserViewController.h */,
+				071F6E101AE22E24003AB0B8 /* ZJSImageBrowserViewController.m */,
+				071F6E401AE2499E003AB0B8 /* ZJSAssetsLibraryManager.h */,
+				071F6E411AE2499E003AB0B8 /* ZJSAssetsLibraryManager.m */,
+			);
+			path = ZJSImagePicker;
+			sourceTree = "<group>";
+		};
+		071A43071ADFE3220044CCB0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				071A43B41AE0FF0F0044CCB0 /* Cell */,
+				071A43AA1AE0DE3B0044CCB0 /* ZJSImagePickerBottomView.h */,
+				071A43AB1AE0DE3B0044CCB0 /* ZJSImagePickerBottomView.m */,
+				071A43AD1AE0DE550044CCB0 /* ZJSImagePickerBottomView.xib */,
+				071A43BF1AE100970044CCB0 /* ZJSCountView.h */,
+				071A43C01AE100970044CCB0 /* ZJSCountView.m */,
+				071A43C41AE100E00044CCB0 /* ZJSCountView.xib */,
+				078FE1CE1AE3DF1400BCF210 /* ZJSImageView.h */,
+				078FE1CF1AE3DF1400BCF210 /* ZJSImageView.m */,
+				078FE1DC1AE4F0FE00BCF210 /* ZJSImageBrowserTopView.h */,
+				078FE1DD1AE4F0FE00BCF210 /* ZJSImageBrowserTopView.m */,
+				078FE1DF1AE4F1BB00BCF210 /* ZJSImageBrowserTopView.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		071A43B41AE0FF0F0044CCB0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				071A43B51AE0FF0F0044CCB0 /* ZJSImageAlbumTableViewCell.h */,
+				071A43B61AE0FF0F0044CCB0 /* ZJSImageAlbumTableViewCell.m */,
+				071A43B71AE0FF0F0044CCB0 /* ZJSImageAlbumTableViewCell.xib */,
+				071A43B81AE0FF0F0044CCB0 /* ZJSImageCollectionViewCell.h */,
+				071A43B91AE0FF0F0044CCB0 /* ZJSImageCollectionViewCell.m */,
+				071A43BA1AE0FF0F0044CCB0 /* ZJSImageCollectionViewCell.xib */,
+				078FE1D71AE4046000BCF210 /* ZJSImageBrowserCell.h */,
+				078FE1D81AE4046000BCF210 /* ZJSImageBrowserCell.m */,
+				078FE1D91AE4046000BCF210 /* ZJSImageBrowserCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		071F6E081AE22C9B003AB0B8 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				071F6E091AE22C9B003AB0B8 /* check.png */,
+				071F6E0A1AE22C9B003AB0B8 /* check@2x.png */,
+				071F6E0B1AE22C9B003AB0B8 /* check@3x.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +330,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				071F6E0E1AE22C9B003AB0B8 /* check@3x.png in Resources */,
+				071A43BE1AE0FF0F0044CCB0 /* ZJSImageCollectionViewCell.xib in Resources */,
+				071A43C51AE100E00044CCB0 /* ZJSCountView.xib in Resources */,
+				071F6E0D1AE22C9B003AB0B8 /* check@2x.png in Resources */,
+				071F6E0C1AE22C9B003AB0B8 /* check.png in Resources */,
 				071A42E61ADFCC670044CCB0 /* Main.storyboard in Resources */,
+				071A43AE1AE0DE550044CCB0 /* ZJSImagePickerBottomView.xib in Resources */,
 				071A42EB1ADFCC670044CCB0 /* LaunchScreen.xib in Resources */,
 				071A42E81ADFCC670044CCB0 /* Images.xcassets in Resources */,
+				078FE1DB1AE4046000BCF210 /* ZJSImageBrowserCell.xib in Resources */,
+				071A43BC1AE0FF0F0044CCB0 /* ZJSImageAlbumTableViewCell.xib in Resources */,
+				078FE1E01AE4F1BB00BCF210 /* ZJSImageBrowserTopView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +359,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				078FE1D61AE3EA2800BCF210 /* Test2ViewController.m in Sources */,
+				078FE1DE1AE4F0FE00BCF210 /* ZJSImageBrowserTopView.m in Sources */,
+				071A43061ADFE2220044CCB0 /* ZJSImageAlbumsViewController.m in Sources */,
+				078FE1D01AE3DF1400BCF210 /* ZJSImageView.m in Sources */,
+				078FE1D31AE3E4DD00BCF210 /* TestViewController.m in Sources */,
+				071A43B31AE0EC320044CCB0 /* ZJSImagePickerController.m in Sources */,
+				071A43031ADFCF270044CCB0 /* ZJSImagePickerViewController.m in Sources */,
+				071F6E421AE2499E003AB0B8 /* ZJSAssetsLibraryManager.m in Sources */,
+				071A43BD1AE0FF0F0044CCB0 /* ZJSImageCollectionViewCell.m in Sources */,
 				071A42E31ADFCC670044CCB0 /* ViewController.m in Sources */,
+				071A43AC1AE0DE3B0044CCB0 /* ZJSImagePickerBottomView.m in Sources */,
+				071F6E111AE22E24003AB0B8 /* ZJSImageBrowserViewController.m in Sources */,
+				071A43BB1AE0FF0F0044CCB0 /* ZJSImageAlbumTableViewCell.m in Sources */,
+				071A43C11AE100970044CCB0 /* ZJSCountView.m in Sources */,
 				071A42E01ADFCC670044CCB0 /* AppDelegate.m in Sources */,
+				078FE1DA1AE4046000BCF210 /* ZJSImageBrowserCell.m in Sources */,
 				071A42DD1ADFCC670044CCB0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +504,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZJSImagePicker_Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -360,6 +515,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZJSImagePicker_Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -418,6 +574,7 @@
 				071A42FC1ADFCC670044CCB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		071A42FD1ADFCC670044CCB0 /* Build configuration list for PBXNativeTarget "ZJSImagePicker_DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +583,7 @@
 				071A42FF1ADFCC670044CCB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

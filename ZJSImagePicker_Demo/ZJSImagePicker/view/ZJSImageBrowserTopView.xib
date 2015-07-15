@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZJSImageBrowserTopView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UcR-3N-F6E">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRZ-26-VGD">
+                    <rect key="frame" x="16" y="17" width="30" height="30"/>
+                    <state key="normal" title="返回">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="leftButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="dd0-lL-pJE"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0v-bM-7VV">
+                    <rect key="frame" x="160" y="32" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTs-qa-4wf" userLabel="check">
+                    <rect key="frame" x="262" y="7" width="50" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="65L-nB-dbW"/>
+                        <constraint firstAttribute="height" constant="50" id="ZAG-tU-e15"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="check.png"/>
+                    <connections>
+                        <action selector="rightButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="bXu-yV-Zwi"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UcR-3N-F6E" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="94l-yA-wkY"/>
+                <constraint firstAttribute="bottom" secondItem="UcR-3N-F6E" secondAttribute="bottom" id="9Fx-F6-KtR"/>
+                <constraint firstAttribute="centerY" secondItem="qTs-qa-4wf" secondAttribute="centerY" id="KwU-Mb-CxB"/>
+                <constraint firstItem="vRZ-26-VGD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="OQa-94-EF5"/>
+                <constraint firstAttribute="centerY" secondItem="g0v-bM-7VV" secondAttribute="centerY" id="Rou-p1-PGM"/>
+                <constraint firstAttribute="centerX" secondItem="g0v-bM-7VV" secondAttribute="centerX" id="ckx-qM-Zxj"/>
+                <constraint firstAttribute="trailing" secondItem="UcR-3N-F6E" secondAttribute="trailing" id="dsx-Yu-qdT"/>
+                <constraint firstAttribute="trailing" secondItem="qTs-qa-4wf" secondAttribute="trailing" constant="8" id="haf-Yc-6BZ"/>
+                <constraint firstItem="UcR-3N-F6E" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kWy-kX-XZY"/>
+                <constraint firstAttribute="centerY" secondItem="vRZ-26-VGD" secondAttribute="centerY" id="uE2-QE-ZtW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftButton" destination="vRZ-26-VGD" id="h7v-Qb-Vi7"/>
+                <outlet property="rightButton" destination="qTs-qa-4wf" id="IgR-OB-ntP"/>
+                <outlet property="titleLabel" destination="g0v-bM-7VV" id="mJ9-zK-MqD"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="check.png" width="24" height="24"/>
+    </resources>
+</document>

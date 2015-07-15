@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CELL_IDENTIIFIER_PHONE_ALBUM" id="KGk-i7-Jjw" customClass="ZJSImageAlbumTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xRp-c2-pqD">
+                        <rect key="frame" x="0.0" y="0.0" width="59" height="59"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="xRp-c2-pqD" secondAttribute="height" multiplier="1:1" id="T8f-SR-Hsp"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="相册" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvM-zc-V2o">
+                        <rect key="frame" x="67" y="19" width="36" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(25)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9W-sO-tll">
+                        <rect key="frame" x="119" y="19" width="28" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uvM-zc-V2o" firstAttribute="leading" secondItem="xRp-c2-pqD" secondAttribute="trailing" constant="8" id="5mR-RN-9pR"/>
+                    <constraint firstItem="xRp-c2-pqD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="8ng-ST-o4a"/>
+                    <constraint firstAttribute="bottom" secondItem="xRp-c2-pqD" secondAttribute="bottom" id="9Yw-Er-arz"/>
+                    <constraint firstItem="xRp-c2-pqD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="DPe-bY-N2Z"/>
+                    <constraint firstItem="xRp-c2-pqD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Drm-5y-Rch"/>
+                    <constraint firstAttribute="centerY" secondItem="N9W-sO-tll" secondAttribute="centerY" id="aP1-bN-hFc"/>
+                    <constraint firstAttribute="centerY" secondItem="uvM-zc-V2o" secondAttribute="centerY" id="cTA-qf-VZg"/>
+                    <constraint firstItem="xRp-c2-pqD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="kG8-uM-ax8"/>
+                    <constraint firstItem="N9W-sO-tll" firstAttribute="leading" secondItem="uvM-zc-V2o" secondAttribute="trailing" constant="16" id="v40-dz-nBV"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="xRp-c2-pqD" secondAttribute="bottom" id="wZd-AR-XUd"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="8ng-ST-o4a"/>
+                        <exclude reference="kG8-uM-ax8"/>
+                        <exclude reference="wZd-AR-XUd"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="myDetailLabel" destination="N9W-sO-tll" id="Q2K-3f-EgX"/>
+                <outlet property="myImageView" destination="xRp-c2-pqD" id="cfO-kB-EWC"/>
+                <outlet property="myTextLabel" destination="uvM-zc-V2o" id="4sO-8U-OTd"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
